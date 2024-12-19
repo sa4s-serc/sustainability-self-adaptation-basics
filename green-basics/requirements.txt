@@ -1,0 +1,6 @@
+Flask
+psutil
+plotly
+pandas
+scikit-learn
+energyusage
