@@ -12,9 +12,7 @@
 
 ## SWITCH Demo
 
-1. [Click here for Windows OS instructions]()
-2. [Click here for Linux OS instructions]()
-3. [Click here for Mac OS instructions]()
+[Click here to know more about SWITCH and Setup](https://github.com/sa4s-serc/switch)
 
 ## Calculate Energy Consumption for a ML Model
 
