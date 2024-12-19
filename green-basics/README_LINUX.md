@@ -56,6 +56,7 @@ Before starting, ensure the following are installed on your Linux system. If not
 1. Open the terminal.
 2. Clone the project repository:
    ```bash
+   cd Downloads/
    git clone https://github.com/sa4s-serc/sustainability-self-adaptation-basics.git
    ```
 3. Navigate to the Project Directory
@@ -67,7 +68,8 @@ Before starting, ensure the following are installed on your Linux system. If not
 
 1. Go the respoitory's webpage on GitHub [https://github.com/sa4s-serc/sustainability-self-adaptation-basics](https://github.com/sa4s-serc/sustainability-self-adaptation-basics)
 2. Click the `Code` button and select `Download ZIP`
-3. Extract the ZIP file into a folder on your system, once the download is complete:
+3. Open the terminal
+4. Extract the ZIP file into a folder on your system, once the download is complete:
    ```bash
    cd Downloads
    unzip sustainability-self-adaptation-basics.zip
@@ -80,6 +82,7 @@ Before starting, ensure the following are installed on your Linux system. If not
 1. Make sure you have the `wget` command in your system. If not there, run:
 2. Download the repository as a ZIP file using `wget`:
    ```bash
+   cd Downloads
    wget https://github.com/sa4s-serc/sustainability-self-adaptation-basics/archive/main.zip -O sustainability-self-adaptation-basics.zip
    ```
    ![image](https://github.com/user-attachments/assets/4bad6b18-6f07-4ba8-9c5f-0c6cc9b49ca3)
@@ -122,5 +125,26 @@ Before starting, ensure the following are installed on your Linux system. If not
     ```
     ![image](https://github.com/user-attachments/assets/61261a9e-1cd2-4279-ba46-002a056b3e43)
 
-    
+### Step 3: View the Dashboard:
+
+1. Open your browser
+2. Go to [http://127.0.0.1:5000](http://127.0.0.1:5000)
+3. You will see real-time metrics for:
+  - Energy usage
+  - CPU usage
+  - Memory Usage
+    ![image](https://github.com/user-attachments/assets/ba911074-ef47-4f7b-9688-ae851086d7b2)
+
+---
+
+Next Steps (Explore out of own interest)
+
+- Modifying the dashboard to display additional metrics.
+- Integrating your own machine learning models.
+
+---
+
+Additional Resources
+
+- 
 
