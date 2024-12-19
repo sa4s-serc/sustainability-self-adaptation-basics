@@ -137,14 +137,14 @@ Before starting, ensure the following are installed on your Linux system. If not
 
 ---
 
-Next Steps (Explore out of own interest)
+## Next Steps (Explore out of own interest)
 
 - Modifying the dashboard to display additional metrics.
 - Integrating your own machine learning models.
 
 ---
 
-Additional Resources
+## Additional Resources
 
 - 
 
