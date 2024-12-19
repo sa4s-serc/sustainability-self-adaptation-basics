@@ -23,14 +23,18 @@ def monitor_metrics(duration=5):
     memory_usage = []
 
     psutil.cpu_percent(interval=None)
+    meter = pyRAPL.Measurement('energy')
 
     for _ in range(duration):
         # Simulating energy usage (via CPU utilization)
         #energy_usage.append(psutil.cpu_percent())
-        energy_usage.append(pyRAPL.measurement.Measurement('energy').result.pkg)
+        #energy_usage.append(pyRAPL.measurement.Measurement('energy').result.pkg)
+        meter.begin()
         cpu_usage.append(psutil.cpu_percent(interval=1))
         memory_usage.append(psutil.virtual_memory().percent)
         time.sleep(1)
+        meter.end()
+        energy_usage.append(meter.result.pkg[0])
 
     return {
         "energy_usage": energy_usage,
@@ -42,3 +46,4 @@ if __name__ == "__main__":
     metrics = monitor_metrics()
     run_model()
     print(metrics)
+
