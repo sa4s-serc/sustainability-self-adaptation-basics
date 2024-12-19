@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-1. [Introduction](## Introduction)
-2. [SWITCH DEMO]()
+1. [Introduction](#introduction)
+2. [SWITCH DEMO](#switch-demo)
 3. [Calculate Energy Consumption for a ML Model]()
 4. [Setting up a Simple MAPE-K Loop with two Models - Self Adaptive Ml Systems]()
 
