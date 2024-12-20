@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-2. [SWITCH DEMO](#switch-demo)
-3. [Calculate Energy Consumption for a ML Model](#calculate-energy-consumption-for-a-ml-model)
-4. [Setting up a Simple MAPE-K Loop with two Models - Self Adaptive Ml Systems](#setting-up-a-simple-mape-k-loop-with-two-models---self-adaptive-ml-systems)
+1. [SWITCH DEMO](#switch-demo)
+2. [Calculate Energy Consumption for a ML Model](#calculate-energy-consumption-for-a-ml-model)
+3. [Setting up a Simple MAPE-K Loop with two Models - Self Adaptive Ml Systems](#setting-up-a-simple-mape-k-loop-with-two-models---self-adaptive-ml-systems)
 
 
 ## SWITCH Demo
