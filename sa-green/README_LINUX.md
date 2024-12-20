@@ -1,4 +1,4 @@
-#Energy Usage Monitoring Tutorial
+# Energy Usage Monitoring Tutorial
 
 This tutorial will guide you through setting up a Python environment and running an energy usage monitoring system for machine learning tasks using Flask and pyRAPL.
 
@@ -45,7 +45,14 @@ Before starting, ensure the following are installed on your Linux system. If not
 
 ## Step-by-Step Instructions
 
-### Step 1: Setup the Virtual Environment
+### Step 1: Obtain the Project Files
+
+This step is already done in the first task, if not done, follow [these steps](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/green-basics/README_LINUX.md#step-1-obtain-the-project-files)
+
+- If you are in `green-basics` folder, go to `sa-green` folder in command prompt or Power Shell.
+  ![image](https://github.com/user-attachments/assets/3924fd4d-dd1b-4f50-b382-176055b1a6fb)
+
+### Step 2: Setup the Virtual Environment
 
 - Deactivate any virtual environment if present.
   ```bash
@@ -60,13 +67,6 @@ Before starting, ensure the following are installed on your Linux system. If not
   source sa4s-env/bin/activate
   ```
   ![image](https://github.com/user-attachments/assets/d541cb7c-29d1-4200-ac00-0ea0ac3516bb)
-
-### Step 2: Obtain the Project Files
-
-This step is already done in the first task, if not done, follow [these steps](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/green-basics/README_LINUX.md#step-1-obtain-the-project-files)
-
-- If you are in `green-basics` folder, go to `sa-green` folder in command prompt or Power Shell.
-  ![image](https://github.com/user-attachments/assets/3924fd4d-dd1b-4f50-b382-176055b1a6fb)
 
 
 ### Step 3: Installl Dependencies
