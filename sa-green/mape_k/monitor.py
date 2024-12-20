@@ -1,21 +1,23 @@
-import pyRAPL
 import psutil
 import time
 import subprocess
+import platform
+import pyRAPL
 
 class Monitor:
-    def __init__(self, system_type="intel"):
-        self.system_type = system_type
+    def __init__(self, cpu_tdp=105):
+        self.system_type = platform.system().lower()  # Automatically detect system type
         self.use_pyrapl = False
+        self.cpu_tdp = cpu_tdp
 
-        if system_type == "intel":
+        if self.system_type == "linux":
             try:
                 import pyRAPL
                 pyRAPL.setup()
                 self.energy_meter = pyRAPL.Measurement('energy_usage_monitor')
                 self.use_pyrapl = True
             except ImportError:
-                print("pyRAPL not available. Falling back to generic monitoring.")
+                print("pyRAPL not available on Linux. Falling back to generic monitoring.")
                 self.energy_meter = None
         else:
             self.energy_meter = None
@@ -31,13 +33,24 @@ class Monitor:
                 raise RuntimeError("Energy monitoring was not started before stopping.")
             self.energy_meter.end()
             return self.energy_meter.result.pkg[0] if isinstance(self.energy_meter.result.pkg, list) else self.energy_meter.result.pkg
-        elif self.system_type == "amd":
+        elif self.system_type == "linux":
             return self.get_amd_energy_usage()
-        elif self.system_type == "mac":
+        elif self.system_type == "darwin":  # macOS
             return self.get_mac_energy_usage()
+        elif self.system_type == "windows":
+            print("Starting Energy monitoring for this system.")
+            return self.simulate_energy_usage()
         else:
             print("Energy monitoring not available for this system.")
-            return "Not available"
+            return 0
+        
+    def simulate_energy_usage(self, duration=5):
+        # Simulate energy usage based on CPU utilization and TDP
+        total_energy = 0
+        for _ in range(duration):
+            cpu_usage = psutil.cpu_percent(interval=1) / 100  # CPU usage as a fraction
+            total_energy += cpu_usage * self.cpu_tdp  # Multiply by TDP
+        return total_energy  # Approximate energy in Joules
 
     def get_amd_energy_usage(self):
         try:
@@ -71,3 +84,11 @@ class Monitor:
             "confidence_scores": confidence_scores,
             "detections": len(detections)
         }
+
+# Example Usage
+if __name__ == "__main__":
+    monitor = Monitor()
+    monitor.start_energy_monitor()
+    time.sleep(1)  # Simulate workload
+    metrics = monitor.get_metrics([0.95, 0.87], ["object1", "object2"])
+    print(metrics)
