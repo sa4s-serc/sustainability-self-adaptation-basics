@@ -21,28 +21,31 @@ This project demonstrates how to monitor energy consumption, CPU usage, and memo
   - scikit-learn
   - numpy
 
-Before starting, ensure the following are installed on your Linux system. If not, follow the instructions below:
+Before starting, ensure the following are installed on your Windows system. If not, follow the instructions below:
 
 1. **Git:**
-  - Git is used to clone the repository. If not installed, run:
-    ```bash
-    sudo apt update
-    sudo apt install git -y
-    ```
-  - To verify the installation, run:
+  - Git is used to clone the repository.
+  - If not installed go to [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+  - Select `32 bit` or `64 bit` Standalone installer based on your system configuration.
+    ![image](https://github.com/user-attachments/assets/346a7513-e4c3-4e4a-9a40-d86c6e419166)
+  - An executable file will be installed.
+  - Double click on the file and proceed with installation.
+  - To verify the installation open the Command Prompt or PowerShell or Git Bash, and run:
     ```bash
     git --version
     ```
     
 2. **Python:**
   - Python is required to run the application
-  - Check the Python Version:
+  - If not installed go to [https://www.python.org/downloads/](https://www.python.org/downloads/)
+  - Download the `Python 3.12.8` version only.
+    ![image](https://github.com/user-attachments/assets/f4b612c0-1dfc-47dc-9823-4492a8ae2be4)
+
+  - An executable file will be installed.
+  - Double click on the file and proceed with installation.
+  - To verify the installation open the command prompt or PoweShell, and run:
     ```bash
-    python3 --version
-    ```
-  - If Python is not installed, run:
-    ```bash
-    sudo apt install python3.12 python3-pip -y
+    python --version
     ```
 ---
 
