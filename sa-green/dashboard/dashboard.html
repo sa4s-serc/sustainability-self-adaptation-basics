@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Usage Dashboard</title>
+</head>
+<body>
+    <h1>Energy Usage Dashboard</h1>
+    <ul>
+        <li>Energy Usage: {{ metrics['energy_usage'] }} J</li>
+        <li>CPU Usage: {{ metrics['cpu_usage'] }} %</li>
+        <li>Memory Usage: {{ metrics['memory_usage'] }} %</li>
+        <li>Confidence Scores: {{ metrics['confidence_scores'] }}</li>
+        <li>Number of Detections: {{ metrics['detections'] }}</li>
+    </ul>
+</body>
+</html>

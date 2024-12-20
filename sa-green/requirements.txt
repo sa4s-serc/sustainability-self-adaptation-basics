@@ -1,0 +1,9 @@
+tensorflow
+tensorflow-hub
+pyRAPL
+psutil
+Flask
+opencv-python
+numpy
+pymongo
+pandas
