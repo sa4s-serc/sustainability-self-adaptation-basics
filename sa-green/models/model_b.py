@@ -39,25 +39,27 @@ def postprocess_output(output_data, image_shape):
     for i in range(num_detections):
         confidence = detection_scores[i]
         if confidence > 0.5:  # Confidence threshold
-            bbox = detection_boxes[i]
-            class_id = int(detection_classes[i])
+            bbox_list = detection_boxes[i]  # Get the list of bounding boxes for this detection
+            
+            # Iterate over each bbox in the nested structure
+            for bbox in bbox_list:
+                # Ensure bbox has exactly 4 values
+                if len(bbox) == 4:
+                    x_min, y_min, x_max, y_max = bbox
 
-            # Normalize bounding box coordinates (if needed)
-            x_min, y_min, x_max, y_max = bbox
-            x_min = max(0, x_min)
-            y_min = max(0, y_min)
-            x_max = min(image_shape[1], x_max)
-            y_max = min(image_shape[0], y_max)
+                    # Normalize bounding box coordinates
+                    x_min = max(0, x_min)
+                    y_min = max(0, y_min)
+                    x_max = min(image_shape[1], x_max)
+                    y_max = min(image_shape[0], y_max)
 
-            # Append detection
-            detections.append({
-                "class": class_id,
-                "confidence": confidence,
-                "bbox": [x_min, y_min, x_max, y_max]
-            })
+                    detections.append({
+                        "class": int(detection_classes[i]),
+                        "confidence": confidence,
+                        "bbox": [x_min, y_min, x_max, y_max]
+                    })
 
     return detections
-
 
 def infer(image):
     input_data = preprocess_image(image)
