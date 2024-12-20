@@ -16,12 +16,10 @@
 
 ## Calculate Energy Consumption for a ML Model
 
-1. [Click here for Windows OS instructions]()
-2. [Click here for Linux OS instructions]()
-3. [Click here for Mac OS instructions]()
+1. [Click here for Windows OS instructions](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/green-basics/README_WINDOWS.md)
+2. [Click here for Linux OS instructions](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/green-basics/README_LINUX.md)
 
 ## Setting up a Simple MAPE-K Loop with two Models - Self Adaptive ML Systems
 
-1. [Click here for Windows OS instructions]()
-2. [Click here for Linux OS instructions]()
-3. [Click here for Mac OS instructions]()
+1. [Click here for Windows OS instructions](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/sa-green/README-WINDOWS.md)
+2. [Click here for Linux OS instructions](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/sa-green/README_LINUX.md)
