@@ -49,7 +49,7 @@ Before starting, ensure the following are installed on your Linux system. If not
 
 This step is already done in the first task, if not done, follow [these steps](https://github.com/sa4s-serc/sustainability-self-adaptation-basics/blob/main/green-basics/README_LINUX.md#step-1-obtain-the-project-files)
 
-- If you are in `green-basics` folder, go to `sa-green` folder in command prompt or Power Shell.
+- If you are in `green-basics` folder, go to `sa-green` folder in terminal.
   ![image](https://github.com/user-attachments/assets/3924fd4d-dd1b-4f50-b382-176055b1a6fb)
 
 ### Step 2: Setup the Virtual Environment
