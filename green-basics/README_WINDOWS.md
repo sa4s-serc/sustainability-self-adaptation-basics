@@ -80,7 +80,13 @@ Before starting, ensure the following are installed on your Windows system. If n
 
 ### Step 2: Run the Dashboard
 
-1. Navigate to the task folder.
+1. Create a Virtual Environment.
+   ```bash
+   python -m venv green-env
+   .\green-env\Scripts\activate
+   ```
+   
+2. Navigate to the task folder.
    ```bash
    cd green-basics
    ```
@@ -92,16 +98,20 @@ Before starting, ensure the following are installed on your Windows system. If n
 
 3. To start the application, run:
    ```bash
-   python3 app.py
+   python app.py
    ```
 4. You should see the output indicating the server is running:
 
 5. Run the Model, as follows:
-  - Open the new terminal window or tab.
+  - Open the new command prompt window.
   - Navigate to the project folder if not already there
+  - Activate the environment
+  ```bash
+   .\green-env\Scripts\activate
+   ```
   - Run the model script:
     ```bash
-    python3 monitor_model.py
+    python monitor_model.py
     ```
 
 ### Step 3: View the Dashboard:
