@@ -85,6 +85,8 @@ Before starting, ensure the following are installed on your Windows system. If n
    python -m venv green-env
    .\green-env\Scripts\activate
    ```
+   ![image](https://github.com/user-attachments/assets/566a8d34-e396-40e0-87f5-92407717da0c)
+
    
 2. Navigate to the task folder.
    ```bash
@@ -95,12 +97,16 @@ Before starting, ensure the following are installed on your Windows system. If n
    ```bash
    pip install -r requirements.txt
    ```
+   ![image](https://github.com/user-attachments/assets/be95408f-51c7-479c-99a5-bb829faecb26)
+
 
 3. To start the application, run:
    ```bash
    python app.py
    ```
 4. You should see the output indicating the server is running:
+   ![image](https://github.com/user-attachments/assets/ea6901e3-6ed5-40b1-88c3-27f1c7b2ddd5)
+
 
 5. Run the Model, as follows:
   - Open the new command prompt window.
@@ -113,6 +119,8 @@ Before starting, ensure the following are installed on your Windows system. If n
     ```bash
     python monitor_model.py
     ```
+    ![image](https://github.com/user-attachments/assets/3b425199-d633-4d75-9577-7564a043eea3)
+
 
 ### Step 3: View the Dashboard:
 
@@ -122,6 +130,8 @@ Before starting, ensure the following are installed on your Windows system. If n
   - Energy usage
   - CPU usage
   - Memory Usage
+    ![image](https://github.com/user-attachments/assets/f19cf3e8-e246-492c-957f-57eb264c3474)
+
 
 ---
 
