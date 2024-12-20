@@ -94,28 +94,44 @@ Before starting, ensure the following are installed on your Linux system. If not
    ```
    ![image](https://github.com/user-attachments/assets/d4c3a401-ee8a-4f2d-b749-3b2add491613)
 
-### Step 2: Run the Dashboard
+### Step 2: Setup the Virtual Environment
 
-1. Navigate to the task folder.
+- Deactivate any virtual environment if present.
+  ```bash
+  deactivate
+  ```
+- Navigate to the task folder.
    ```bash
    cd green-basics
    ```
    ![image](https://github.com/user-attachments/assets/fd4aaefb-c18b-47c4-8ddc-05dc34bd6e58)
+- To create a virtual environment for this task, run:
+  ```bash
+  python -m venv green
+  ```
+- To activate the virtual environent, run:
+  ```bash
+  source sa4s-env/bin/activate
+  ```
+  ![image](https://github.com/user-attachments/assets/d541cb7c-29d1-4200-ac00-0ea0ac3516bb)
 
-2. To install the Dependencies as required, run:
+### Step 3: Run the Dashboard
+
+
+1. To install the Dependencies as required, run:
    ```bash
    pip install -r requirements.txt
    ```
    ![image](https://github.com/user-attachments/assets/503f06fc-789a-41b1-ae2b-566668b1f403)
 
-3. To start the application, run:
+2. To start the application, run:
    ```bash
    python3 app.py
    ```
-4. You should see the output indicating the server is running:
+3. You should see the output indicating the server is running:
    ![image](https://github.com/user-attachments/assets/edae9a80-5ff7-4281-ac8b-f6377ce3c16f)
 
-5. Run the Model, as follows:
+4. Run the Model, as follows:
   - Open the new terminal window or tab.
   - Navigate to the project folder if not already there
     ![image](https://github.com/user-attachments/assets/fd4aaefb-c18b-47c4-8ddc-05dc34bd6e58)
@@ -125,7 +141,7 @@ Before starting, ensure the following are installed on your Linux system. If not
     ```
     ![image](https://github.com/user-attachments/assets/61261a9e-1cd2-4279-ba46-002a056b3e43)
 
-### Step 3: View the Dashboard:
+### Step 4: View the Dashboard:
 
 1. Open your browser
 2. Go to [http://127.0.0.1:5000](http://127.0.0.1:5000)
